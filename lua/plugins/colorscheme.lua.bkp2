@@ -1,9 +1,0 @@
-return {
-  { "jordanbrauer/citylights.nvim", require = { "tjdevries/colorbuddy.vim" } },
-  {
-    "LazyVim/LazyVim",
-    opts = {
-      colorscheme = "citylights",
-    },
-  },
-}
