@@ -1,10 +1,5 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
-require("nightfox").setup({
-  options = {
-    transparent = true,
-  },
-})
 require("rose-pine").setup({
   variant = "auto", -- auto, main, moon, or dawn
   dark_variant = "main", -- main, moon, or dawn
@@ -19,7 +14,7 @@ require("rose-pine").setup({
 
   styles = {
     bold = true,
-    italic = false,
+    italic = true,
     transparency = true,
   },
 
