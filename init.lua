@@ -101,4 +101,4 @@ require("lualine").setup({
 })
 
 vim.g.rasmus_transparent = true
-vim.cmd.colorscheme("rose-pine")
+vim.cmd.colorscheme("duskfox")
