@@ -1,3 +1,0 @@
-return {
-  { "embark-theme/vim" },
-}

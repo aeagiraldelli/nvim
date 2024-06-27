@@ -71,3 +71,5 @@ require("lualine").setup({
     theme = "auto",
   },
 })
+
+-- vim.cmd.colorscheme("ariake")
