@@ -1,5 +1,26 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
+
+require("tokyonight").setup({
+  transparent = true,
+  styles = {
+    comments = { italic = true },
+    keywords = { italic = true },
+    functions = {},
+    variables = {},
+    -- Background styles. Can be "dark", "transparent" or "normal"
+    sidebars = "transparent", -- style for sidebars, see below
+    floats = "transparent", -- style for floating windows
+  },
+  on_colors = function(colors) end,
+
+  --- You can override specific highlights to use other groups or a hex color
+  --- function will be called with a Highlights and ColorScheme table
+  ---@param highlights Highlights
+  ---@param colors ColorScheme
+  on_highlights = function(highlights, colors) end,
+})
+
 require("rose-pine").setup({
   variant = "auto", -- auto, main, moon, or dawn
   dark_variant = "main", -- main, moon, or dawn
@@ -66,10 +87,18 @@ require("rose-pine").setup({
     -- end
   end,
 })
+
+require("nightfox").setup({
+  options = {
+    transparent = true,
+  },
+})
+
 require("lualine").setup({
   options = {
     theme = "auto",
   },
 })
 
--- vim.cmd.colorscheme("ariake")
+vim.g.rasmus_transparent = true
+vim.cmd.colorscheme("rose-pine")

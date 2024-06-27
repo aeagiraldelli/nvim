@@ -6,17 +6,19 @@ return {
   { "aktersnurra/no-clown-fiesta.nvim" },
   { "ellisonleao/gruvbox.nvim" },
   { "rose-pine/neovim", name = "rose-pine" },
+  { "sainnhe/sonokai" },
+  { "nyoom-engineering/oxocarbon.nvim" },
+  { "rockerBOO/boo-colorscheme-nvim" },
+  { "fenetikm/falcon" },
+  { "AlexvZyl/nordic.nvim" },
+  { "kvrohit/rasmus.nvim" },
+  { "Yazeed1s/oh-lucy.nvim" },
+  { "ribru17/bamboo.nvim" },
   {
     "folke/tokyonight.nvim",
-    lazy = true,
-    opts = {
-      transparent = true,
-      styles = {
-        sidebars = "transparent",
-        floats = "transparent",
-      },
-      style = "night",
-    },
+    lazy = false,
+    priority = 1000,
+    opts = {},
   },
   {
     "olivercederborg/poimandres.nvim",
