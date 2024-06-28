@@ -94,6 +94,31 @@ require("nightfox").setup({
   },
 })
 
+require("eldritch").setup({
+  transparent = true,
+  styles = {
+    comments = { italic = true },
+    keywords = { italic = true },
+    functions = {},
+    variables = {},
+    -- Background styles. Can be "dark", "transparent" or "normal"
+    sidebars = "transparent", -- style for sidebars, see below
+    floats = "transparent", -- style for floating windows
+  },
+  lualine_bold = true, -- When `true`, section headers in the lualine theme will be bold
+
+  --- You can override specific color groups to use other groups or a hex color
+  --- function will be called with a ColorScheme table
+  ---@param colors ColorScheme
+  on_colors = function(colors) end,
+
+  --- You can override specific highlights to use other groups or a hex color
+  --- function will be called with a Highlights and ColorScheme table
+  ---@param highlights Highlights
+  ---@param colors ColorScheme
+  on_highlights = function(highlights, colors) end,
+})
+
 require("lualine").setup({
   options = {
     theme = "auto",
@@ -101,4 +126,4 @@ require("lualine").setup({
 })
 
 vim.g.rasmus_transparent = true
-vim.cmd.colorscheme("duskfox")
+vim.cmd.colorscheme("rasmus")
