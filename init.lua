@@ -1,6 +1,5 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
-
 require("tokyonight").setup({
   transparent = true,
   styles = {
@@ -44,6 +43,10 @@ require("eldritch").setup({
   lualine_bold = true, -- When `true`, section headers in the lualine theme will be bold
   on_colors = function(colors) end,
   on_highlights = function(highlights, colors) end,
+})
+
+require("neomodern").setup({
+  transparent = true,
 })
 
 require("lualine").setup({
