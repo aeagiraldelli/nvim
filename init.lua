@@ -23,6 +23,11 @@ require("rose-pine").setup({
     legacy_highlights = true, -- Improve compatibility for previous versions of Neovim
     migrations = true, -- Handle deprecated options automatically
   },
+  styles = {
+    bold = true,
+    italic = false,
+    transparency = true,
+  },
 })
 
 require("nightfox").setup({
@@ -56,4 +61,4 @@ require("lualine").setup({
 })
 
 vim.g.rasmus_transparent = true
-vim.cmd.colorscheme("rasmus")
+vim.cmd.colorscheme("rose-pine")
