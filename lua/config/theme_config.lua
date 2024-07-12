@@ -1,7 +1,7 @@
 require("colorbuddy")
 
 require("tokyonight").setup({
-  transparent = true,
+  transparent = false,
   styles = {
     comments = { italic = true },
     keywords = { italic = true },
