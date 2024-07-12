@@ -1,0 +1,45 @@
+require("colorbuddy")
+
+require("tokyonight").setup({
+  transparent = true,
+  styles = {
+    comments = { italic = true },
+    keywords = { italic = true },
+    -- Background styles. Can be "dark", "transparent" or "normal"
+    sidebars = "transparent",
+    floats = "transparent",
+  },
+  on_colors = function(colors) end,
+  on_highlights = function(highlights, colors) end,
+})
+
+require("rose-pine").setup({
+  variant = "auto", -- auto, main, moon, or dawn
+  dark_variant = "main", -- main, moon, or dawn
+  dim_inactive_windows = false,
+  extend_background_behind_borders = true,
+  enable = {
+    terminal = true,
+    legacy_highlights = true, -- Improve compatibility for previous versions of Neovim
+    migrations = true, -- Handle deprecated options automatically
+  },
+  styles = {
+    bold = true,
+    italic = false,
+    transparency = false,
+  },
+})
+
+require("nightfox").setup({
+  options = {
+    transparent = false,
+  },
+})
+
+require("neomodern").setup({
+  transparent = false,
+})
+
+local lualine = require("lualine")
+local citylights = require("lualine.themes.citylights")
+lualine.setup(citylights)
