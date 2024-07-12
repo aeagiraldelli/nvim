@@ -6,8 +6,8 @@ require("tokyonight").setup({
     comments = { italic = true },
     keywords = { italic = true },
     -- Background styles. Can be "dark", "transparent" or "normal"
-    sidebars = "transparent",
-    floats = "transparent",
+    sidebars = "normal",
+    floats = "normal",
   },
   on_colors = function(colors) end,
   on_highlights = function(highlights, colors) end,
@@ -30,15 +30,11 @@ require("rose-pine").setup({
   },
 })
 
-require("nightfox").setup({
-  options = {
-    transparent = false,
-  },
-})
-
 require("neomodern").setup({
   transparent = false,
 })
+
+require("nightfox")
 
 local lualine = require("lualine")
 local citylights = require("lualine.themes.citylights")
