@@ -1,4 +1,5 @@
 require("colorbuddy")
+require("nightfox")
 
 require("tokyonight").setup({
   transparent = false,
@@ -34,5 +35,4 @@ require("neomodern").setup({
   transparent = false,
 })
 
-require("nightfox")
 require("lualine")

@@ -5,9 +5,7 @@ return {
   { "ellisonleao/gruvbox.nvim" },
   { "rose-pine/neovim", name = "rose-pine" },
   { "kvrohit/rasmus.nvim" },
-  { "jordanbrauer/citylights.nvim", dependencies = {
-    "tjdevries/colorbuddy.vim",
-  } },
+  { "tjdevries/colorbuddy.vim" },
   {
     "folke/tokyonight.nvim",
     lazy = false,
