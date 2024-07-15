@@ -35,7 +35,4 @@ require("neomodern").setup({
 })
 
 require("nightfox")
-
-local lualine = require("lualine")
-local citylights = require("lualine.themes.citylights")
-lualine.setup(citylights)
+require("lualine")
