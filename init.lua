@@ -2,6 +2,6 @@
 require("config.lazy")
 
 require("config.theme_config")
-vim.cmd("colorscheme carbonfox")
+vim.cmd("colorscheme nordic")
 vim.opt.pumblend = 0 -- disable transparency for cmp menu
 vim.opt.winblend = 0 -- disable transparency for documentation popup
