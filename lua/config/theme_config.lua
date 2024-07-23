@@ -1,8 +1,16 @@
 require("colorbuddy")
 require("nightfox")
 
+require("kanagawa").setup({
+  transparent = true, -- do not set background color
+  background = { -- map the value of 'background' option to a theme
+    dark = "wave", -- try "dragon" !
+    light = "lotus",
+  },
+})
+
 require("tokyonight").setup({
-  transparent = false,
+  transparent = true,
   styles = {
     comments = { italic = true },
     keywords = { italic = true },
@@ -27,12 +35,12 @@ require("rose-pine").setup({
   styles = {
     bold = true,
     italic = false,
-    transparency = false,
+    transparency = true,
   },
 })
 
 require("neomodern").setup({
-  transparent = false,
+  transparent = true,
 })
 
 require("lualine")
