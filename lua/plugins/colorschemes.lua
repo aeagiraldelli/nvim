@@ -1,10 +1,8 @@
 return {
   { "rebelot/kanagawa.nvim" },
-  { "cocopon/iceberg.vim" },
   { "EdenEast/nightfox.nvim" },
   { "ellisonleao/gruvbox.nvim" },
   { "rose-pine/neovim", name = "rose-pine" },
-  { "kvrohit/rasmus.nvim" },
   { "tjdevries/colorbuddy.vim" },
   {
     "AlexvZyl/nordic.nvim",
