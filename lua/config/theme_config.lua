@@ -46,7 +46,7 @@ require("rose-pine").setup({
   styles = {
     bold = true,
     italic = false,
-    transparency = true,
+    transparency = false,
   },
 })
 
@@ -54,4 +54,6 @@ require("neomodern").setup({
   transparent = false,
 })
 
-require("lualine")
+require("lualine").setup({
+  options = { theme = "auto", section_separators = "", component_separators = "" },
+})
