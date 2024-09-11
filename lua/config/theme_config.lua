@@ -4,6 +4,8 @@ require("catppuccin")
 
 require("kanagawa").setup({
   transparent = false, -- do not set background color
+  keywordStyle = { italic = false },
+  statementStyle = { bold = false },
   background = { -- map the value of 'background' option to a theme
     dark = "wave", -- try "dragon" !
     light = "lotus",
