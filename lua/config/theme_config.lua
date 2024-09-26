@@ -26,7 +26,7 @@ require("tokyonight").setup({
   style = "night",
   styles = {
     comments = { italic = true },
-    keywords = { italic = true },
+    keywords = { italic = false },
     -- Background styles. Can be "dark", "transparent" or "normal"
     sidebars = "normal",
     floats = "normal",
