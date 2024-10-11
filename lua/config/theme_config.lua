@@ -3,7 +3,7 @@ require("nightfox")
 require("catppuccin")
 
 require("kanagawa").setup({
-  transparent = false, -- do not set background color
+  transparent = true, -- do not set background color
   keywordStyle = { italic = false },
   statementStyle = { bold = false },
   background = { -- map the value of 'background' option to a theme
@@ -22,13 +22,13 @@ require("kanagawa").setup({
 })
 
 require("tokyonight").setup({
-  transparent = false,
+  transparent = true,
   style = "night",
   styles = {
     comments = { italic = true },
     keywords = { italic = false },
     -- Background styles. Can be "dark", "transparent" or "normal"
-    sidebars = "normal",
+    sidebars = "transparent",
     floats = "normal",
   },
   on_colors = function(colors) end,
@@ -53,7 +53,7 @@ require("rose-pine").setup({
 })
 
 require("neomodern").setup({
-  transparent = false,
+  transparent = true,
 })
 
 require("lualine").setup({
