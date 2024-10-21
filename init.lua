@@ -1,5 +1,6 @@
 -- bootstrap lazy.nvim, LazyVim and your plugins
 require("config.lazy")
+require("config.base")
 require("config.theme_config")
 require("config.ts_tools")
 vim.cmd("colorscheme tokyonight")
