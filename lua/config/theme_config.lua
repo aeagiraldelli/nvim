@@ -1,6 +1,8 @@
 require("colorbuddy")
 require("nightfox")
-require("catppuccin")
+require("catppuccin").setup({
+  transparent_background = true,
+})
 
 require("kanagawa").setup({
   transparent = true, -- do not set background color
