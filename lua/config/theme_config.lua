@@ -1,4 +1,3 @@
-require("colorbuddy")
 require("nightfox")
 require("catppuccin").setup({
   transparent_background = true,
@@ -52,10 +51,6 @@ require("rose-pine").setup({
     italic = false,
     transparency = false,
   },
-})
-
-require("neomodern").setup({
-  transparent = true,
 })
 
 require("lualine").setup({
