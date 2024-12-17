@@ -71,3 +71,11 @@ vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv", { desc = 'Move selected line down' 
 
 -- Map Clang command to swithc c/c++ header/source files.
 vim.keymap.set('n', '<leader>ch', ':ClangdSwitchSourceHeader<cr>', { desc = 'Switch C header/source files' })
+
+-- Small terminal
+vim.keymap.set('n', '<space>st', function()
+  vim.cmd.vnew()
+  vim.cmd.term()
+  vim.cmd.wincmd 'J'
+  vim.api.nvim_win_set_height(0, 15)
+end, { desc = 'Open small terminal' })
