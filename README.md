@@ -23,7 +23,7 @@ git clone https://github.com/aeagiraldelli/nvim.git "%localappdata%\nvim"
 If you're using `powershell.exe`
 
 ```sh
-git https://github.com/aeagiraldelli/nvim.git "${env:LOCALAPPDATA}\nvim"
+git clone https://github.com/aeagiraldelli/nvim.git "${env:LOCALAPPDATA}\nvim"
 ```
 
 If you're using `git bash`
