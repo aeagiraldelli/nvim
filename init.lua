@@ -30,17 +30,23 @@ require('lazy').setup {
   require 'plugins.autoformat',
 }
 
+-- Configure colorscheme
 require('tokyonight').setup {
-  transparent = false, -- Enable this to disable setting the background color
+  transparent = true, -- Enable this to disable setting the background color
   styles = {
     -- Style to be applied to different syntax groups
     -- Value is any valid attr-list value for `:help nvim_set_hl`
     comments = { italic = true },
     keywords = { italic = true },
     -- Background styles. Can be "dark", "transparent" or "normal"
-    -- sidebars = 'transparent', -- style for sidebars, see below
-    -- floats = 'transparent', -- style for floating windows
+    sidebars = 'transparent', -- style for sidebars, see below
+    floats = 'transparent', -- style for floating windows
   },
 }
 
 vim.cmd [[colorscheme tokyonight]]
+
+-- Configure lulaline transparency for tokyonight theme.
+local luatokyo = require 'lualine.themes.tokyonight'
+luatokyo.normal.c.bg = 'None'
+require('lualine').setup { options = { theme = luatokyo } }
