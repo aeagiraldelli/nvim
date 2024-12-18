@@ -9,6 +9,8 @@ vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 local opts = { noremap = true, silent = true }
 
 vim.keymap.set({ 'n', 'v' }, '<C-s>', '<cmd> w <CR>', { noremap = true, silent = true, desc = 'Save file' })
+vim.keymap.set({ 'n', 'v' }, '<leader>bs', '<cmd>x<CR>', { noremap = true, silent = true, desc = 'Save and quit' })
+vim.keymap.set({ 'n', 'v' }, '<leader>qq', '<cmd>xa<CR>', { noremap = true, silent = true, desc = 'Save all and quit neovim' })
 vim.keymap.set('n', '<leader>sn', '<cmd>noautocmd w <CR>', { noremap = true, silent = true, desc = 'Save file without auto-formatting' })
 
 -- quit file
@@ -79,3 +81,8 @@ vim.keymap.set('n', '<space>st', function()
   vim.cmd.wincmd 'J'
   vim.api.nvim_win_set_height(0, 15)
 end, { desc = 'Open small terminal' })
+
+-- Toggle background dark/light
+vim.keymap.set('n', '<leader>ub', function()
+  vim.o.background = vim.o.background == 'dark' and 'light' or 'dark'
+end, { desc = 'Toggle background' })
