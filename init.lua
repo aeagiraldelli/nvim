@@ -31,6 +31,7 @@ require('lazy').setup({
   require 'plugins.autopairs',
   require 'plugins.lualine',
   require 'plugins.lint',
+  require 'plugins.typescript-tools',
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
