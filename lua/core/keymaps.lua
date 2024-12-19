@@ -38,6 +38,10 @@ vim.keymap.set('n', '<leader>wv', '<C-w>v', { noremap = true, silent = true, des
 vim.keymap.set('n', '<leader>wh', '<C-w>s', { noremap = true, silent = true, desc = 'Split [w]indow [h]orizontally' })
 vim.keymap.set('n', '<leader>we', '<C-w>=', { noremap = true, silent = true, desc = 'Make split [w]indows [e]qual width and height' })
 vim.keymap.set('n', '<leader>wc', ':close<CR>', { noremap = true, silent = true, desc = 'Close current split window' })
+vim.keymap.set('n', '<C-right>', [[<cmd>vertical resize +5<cr>]], { desc = 'Resize window to the right' })
+vim.keymap.set('n', '<C-left>', [[<cmd>vertical resize -5<cr>]], { desc = 'Resize window to the left' })
+vim.keymap.set('n', '<C-down>', [[<cmd>horizontal resize +2<cr>]], { desc = 'Resize window to the bottom' })
+vim.keymap.set('n', '<C-up>', [[<cmd>horizontal resize -2<cr>]], { desc = 'Resize window up' })
 
 -- Navigate between splits
 vim.keymap.set('n', '<C-k>', ':wincmd k<CR>', opts)
