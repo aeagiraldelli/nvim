@@ -69,7 +69,7 @@ require('tokyonight').setup {
 
 vim.cmd [[colorscheme tokyonight]]
 
--- Configure lulaline transparency for tokyonight theme.
+-- Configure lualine transparency for tokyonight theme.
 local luatokyo = require 'lualine.themes.tokyonight'
 luatokyo.normal.c.bg = 'None'
 require('lualine').setup { options = { theme = luatokyo } }

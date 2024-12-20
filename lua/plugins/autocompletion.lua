@@ -33,6 +33,14 @@ return {
     --  into multiple repos for maintenance purposes.
     'hrsh7th/cmp-nvim-lsp',
     'hrsh7th/cmp-path',
+    'crazyhulk/cmp-sign',
+    'hrsh7th/cmp-nvim-lsp-document-symbol',
+    'hrsh7th/cmp-nvim-lsp-signature-help',
+    'zjp-CN/nvim-cmp-lsp-rs',
+    'Jezda1337/nvim-html-css',
+    'roginfarrer/cmp-css-variables',
+    'Snikimonkd/cmp-go-pkgs',
+    'ray-x/cmp-sql',
   },
   config = function()
     -- See `:help cmp`
