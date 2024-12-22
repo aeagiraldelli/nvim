@@ -67,9 +67,23 @@ require('tokyonight').setup {
   },
 }
 
-vim.cmd [[colorscheme tokyonight]]
+require('nordic').setup {
+  bold_keywords = false,
+  italic_comments = true,
+  transparent = {
+    bg = true,
+    float = true,
+  },
+}
+
+vim.cmd [[colorscheme nordic]]
 
 -- Configure lualine transparency for tokyonight theme.
-local luatokyo = require 'lualine.themes.tokyonight'
-luatokyo.normal.c.bg = 'None'
-require('lualine').setup { options = { theme = luatokyo } }
+-- local luatokyo = require 'lualine.themes.tokyonight'
+-- luatokyo.normal.c.bg = 'None'
+-- require('lualine').setup { options = { theme = luatokyo } }
+
+-- Configure lualine transparency for Nordic theme
+local nordictheme = require 'lualine.themes.nordic'
+nordictheme.normal.c.bg = 'None'
+require('lualine').setup { options = { theme = nordictheme } }
