@@ -74,6 +74,10 @@ require('nordic').setup {
     bg = true,
     float = true,
   },
+  telescope = {
+    -- Available styles: `classic`, `flat`.
+    style = 'classic',
+  },
 }
 
 vim.cmd [[colorscheme nordic]]
