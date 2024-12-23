@@ -27,7 +27,6 @@ return {
       },
     },
     'saadparwaiz1/cmp_luasnip',
-
     -- Adds other completion capabilities.
     --  nvim-cmp does not ship with all sources by default. They are split
     --  into multiple repos for maintenance purposes.
@@ -37,7 +36,6 @@ return {
     'hrsh7th/cmp-nvim-lsp-document-symbol',
     'hrsh7th/cmp-nvim-lsp-signature-help',
     'zjp-CN/nvim-cmp-lsp-rs',
-    'Jezda1337/nvim-html-css',
     'roginfarrer/cmp-css-variables',
     'Snikimonkd/cmp-go-pkgs',
     'ray-x/cmp-sql',
@@ -48,6 +46,8 @@ return {
     local luasnip = require 'luasnip'
     luasnip.config.setup {}
 
+    local cmp_autopairs = require 'nvim-autopairs.completion.cmp'
+    cmp.event:on('confirm_done', cmp_autopairs.on_confirm_done())
     cmp.setup {
       snippet = {
         expand = function(args)
