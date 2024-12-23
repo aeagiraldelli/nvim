@@ -45,3 +45,4 @@ vim.opt.runtimepath:remove '/usr/share/vim/vimfiles' -- Separate Vim plugins fro
 vim.opt.pumblend = 0 -- disable transparency for cmp menu
 vim.opt.winblend = 0 -- disable transparency for documentation popup
 vim.o.cmdheight = 0 -- Command line not visible all time.
+vim.o.showtabline = 0 -- Never show tab names at the top.
