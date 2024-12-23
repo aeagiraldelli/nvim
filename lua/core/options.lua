@@ -44,3 +44,4 @@ vim.opt.formatoptions:remove { 'c', 'r', 'o' } -- Don't insert the current comme
 vim.opt.runtimepath:remove '/usr/share/vim/vimfiles' -- Separate Vim plugins from Neovim in case Vim still in use (default: includes this path if Vim is installed)
 vim.opt.pumblend = 0 -- disable transparency for cmp menu
 vim.opt.winblend = 0 -- disable transparency for documentation popup
+vim.o.cmdheight = 0 -- Command line not visible all time.
