@@ -37,10 +37,14 @@ return { -- Autoformat
       --
       -- You can use 'stop_after_first' to run the first available formatter from the list
       javascript = { 'prettier', 'prettierd', stop_after_first = true },
+      javascriptreact = { 'prettier', 'prettierd', stop_after_first = true },
       typescript = { 'prettier', 'prettierd', stop_after_first = true },
+      typescriptreact = { 'prettier', 'prettierd', stop_after_first = true },
       html = { 'prettier', 'prettierd', stop_after_first = true },
       css = { 'prettier', 'prettierd', stop_after_first = true },
       c = { 'clang-format' },
+      go = { 'goimports', 'gofmt' },
+      rust = { 'rustfmt', lsp_format = 'fallback' },
     },
   },
 }
