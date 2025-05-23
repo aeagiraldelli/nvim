@@ -43,5 +43,9 @@ require('nightfox').setup {
   },
 }
 
+require('vague').setup {
+  transparent = true, -- don't set background
+}
+
 -- setup must be called before loading
-vim.cmd [[colorscheme nightfox]]
+vim.cmd [[colorscheme vague]]
