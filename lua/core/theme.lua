@@ -48,4 +48,9 @@ require('vague').setup {
 }
 
 -- setup must be called before loading
-vim.cmd [[colorscheme vague]]
+-- vim.cmd [[colorscheme vague]]
+
+require('onedark').setup {
+  style = 'darker',
+}
+require('onedark').load()
