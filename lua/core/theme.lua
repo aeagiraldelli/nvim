@@ -56,4 +56,4 @@ require('onedark').setup {
 require('onedark').load()
 
 -- setup must be called before loading
-vim.cmd [[colorscheme vague]]
+vim.cmd [[colorscheme tokyonight]]
