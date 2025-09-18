@@ -11,6 +11,7 @@ local opts = { noremap = true, silent = true }
 vim.keymap.set({ 'n', 'v' }, '<C-s>', '<cmd> w <CR>', { noremap = true, silent = true, desc = 'Save file' })
 vim.keymap.set({ 'n', 'v' }, '<leader>bs', '<cmd>x<CR>', { noremap = true, silent = true, desc = 'Save and quit' })
 vim.keymap.set('n', '<leader>sn', '<cmd>noautocmd w <CR>', { noremap = true, silent = true, desc = 'Save file without auto-formatting' })
+vim.keymap.set('n', '<leader>r', vim.lsp.buf.rename, { desc = 'LSP rename' })
 
 -- quit file
 vim.keymap.set('n', '<C-q>', '<cmd> q <CR>', opts)
