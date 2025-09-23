@@ -55,5 +55,14 @@ require('onedark').setup {
 }
 require('onedark').load()
 
+require('github-theme').setup {
+  options = {
+    transparent = true,
+    styles = {
+      comments = 'italic',
+    },
+  },
+}
+
 -- setup must be called before loading
-vim.cmd [[colorscheme tokyonight]]
+vim.cmd [[colorscheme github_dark_default]]
