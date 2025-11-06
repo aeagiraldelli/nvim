@@ -106,5 +106,9 @@ require('catppuccin').setup {
   },
 }
 
+require('radium').setup {
+  transparency = true,
+}
+
 -- setup must be called before loading
-vim.cmd [[colorscheme catppuccin]]
+vim.cmd [[colorscheme radium]]
