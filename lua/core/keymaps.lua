@@ -14,7 +14,7 @@ vim.keymap.set('n', '<leader>sn', '<cmd>noautocmd w <CR>', { noremap = true, sil
 vim.keymap.set('n', '<leader>r', vim.lsp.buf.rename, { desc = 'LSP rename' })
 
 -- quit file
-vim.keymap.set('n', '<C-q>', '<cmd> q <CR>', opts)
+vim.keymap.set('n', '<leader>dc', ':bp<bar>sp<bar>bn<bar>bd<CR>', { noremap = true, silent = true, desc = 'Quit current buffer without closing window' })
 
 -- delete single character without copying into register
 vim.keymap.set('n', 'x', '"_x', opts)
