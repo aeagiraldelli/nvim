@@ -46,4 +46,9 @@ return {
   { 'catppuccin/nvim', name = 'catppuccin', priority = 1000 },
   { 'Sly-Harvey/radium.nvim', lazy = false, priority = 1000 },
   { 'rebelot/kanagawa.nvim', lazy = false, priority = 1000 },
+  {
+    'webhooked/kanso.nvim',
+    lazy = false,
+    priority = 1000,
+  },
 }
