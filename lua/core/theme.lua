@@ -70,9 +70,9 @@ require('catppuccin').setup {
     light = 'latte',
     dark = 'mocha',
   },
-  transparent_background = false, -- disables setting the background color.
+  transparent_background = true, -- disables setting the background color.
   float = {
-    transparent = false, -- enable transparent floating windows
+    transparent = true, -- enable transparent floating windows
     solid = false, -- use solid styling for floating windows, see |winborder|
   },
   no_italic = false, -- Force no italic
@@ -202,4 +202,4 @@ require('kanso').setup {
 }
 
 -- setup must be called before loading
-vim.cmd [[colorscheme kanagawa]]
+vim.cmd [[colorscheme catppuccin]]

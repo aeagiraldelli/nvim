@@ -85,7 +85,7 @@ vim.keymap.set('v', 'K', ":m '<-2<CR>gv=gv", { desc = 'Move selected line down' 
 vim.keymap.set('n', '<leader>ch', '<cmd>Ouroboros<cr>', { desc = 'Switch C header/source files' })
 
 -- Small terminal
-vim.keymap.set('n', '<space>st', function()
+vim.keymap.set('n', '<space>tt', function()
   vim.cmd.vnew()
   vim.cmd.term()
   vim.cmd.wincmd 'J'
