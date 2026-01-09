@@ -51,4 +51,13 @@ return {
     lazy = false,
     priority = 1000,
   },
+  {
+    "aeagiraldelli/citylights.nvim",
+    dependencies = {
+      "tjdevries/colorbuddy.vim"
+    },
+    config = function()
+      require("colorbuddy").colorscheme("citylights")
+    end
+  }
 }
