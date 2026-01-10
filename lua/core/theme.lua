@@ -7,7 +7,7 @@ require('tokyonight').setup {
     keywords = { italic = true },
     -- Background styles. Can be "dark", "transparent" or "normal"
     sidebars = 'transparent', -- style for sidebars, see below
-    floats = 'transparent', -- style for floating windows
+    floats = 'transparent',   -- style for floating windows
   },
 }
 
@@ -27,8 +27,8 @@ require('nordic').setup {
 -- Default options
 require('nightfox').setup {
   options = {
-    transparent = true, -- Disable setting background
-    styles = { -- Style to be applied to different syntax groups
+    transparent = true,    -- Disable setting background
+    styles = {             -- Style to be applied to different syntax groups
       comments = 'italic', -- Value is any valid attr-list value `:help attr-list`
       conditionals = 'NONE',
       constants = 'NONE',
@@ -66,20 +66,20 @@ require('github-theme').setup {
 
 require('catppuccin').setup {
   flavour = 'auto', -- latte, frappe, macchiato, mocha
-  background = { -- :h background
+  background = {    -- :h background
     light = 'latte',
     dark = 'mocha',
   },
   transparent_background = true, -- disables setting the background color.
   float = {
-    transparent = true, -- enable transparent floating windows
-    solid = false, -- use solid styling for floating windows, see |winborder|
+    transparent = true,          -- enable transparent floating windows
+    solid = false,               -- use solid styling for floating windows, see |winborder|
   },
-  no_italic = false, -- Force no italic
-  no_bold = false, -- Force no bold
-  no_underline = false, -- Force no underline
-  styles = { -- Handles the styles of general hi groups (see `:h highlight-args`):
-    comments = { 'italic' }, -- Change the style of comments
+  no_italic = false,             -- Force no italic
+  no_bold = false,               -- Force no bold
+  no_underline = false,          -- Force no underline
+  styles = {                     -- Handles the styles of general hi groups (see `:h highlight-args`):
+    comments = { 'italic' },     -- Change the style of comments
     conditionals = {},
     loops = {},
     functions = {},
@@ -111,17 +111,17 @@ require('radium').setup {
 }
 
 require('kanagawa').setup {
-  compile = false, -- enable compiling the colorscheme
+  compile = false,  -- enable compiling the colorscheme
   undercurl = true, -- enable undercurls
   commentStyle = { italic = true },
   functionStyle = {},
   keywordStyle = { italic = true },
   statementStyle = { bold = true },
   typeStyle = {},
-  transparent = true, -- do not set background color
-  dimInactive = false, -- dim inactive window `:h hl-NormalNC`
+  transparent = true,    -- do not set background color
+  dimInactive = false,   -- dim inactive window `:h hl-NormalNC`
   terminalColors = true, -- define vim.g.terminal_color_{0,17}
-  colors = { -- add/modify theme and palette colors
+  colors = {             -- add/modify theme and palette colors
     palette = {},
     theme = {
       wave = {},
@@ -152,27 +152,27 @@ require('kanagawa').setup {
       MasonNormal = { bg = theme.ui.bg_m3, fg = theme.ui.fg_dim },
     }
   end,
-  theme = 'wave', -- Load "wave" theme
-  background = { -- map the value of 'background' option to a theme
+  theme = 'wave',  -- Load "wave" theme
+  background = {   -- map the value of 'background' option to a theme
     dark = 'wave', -- try "dragon" !
     light = 'lotus',
   },
 }
 
 require('kanso').setup {
-  bold = true, -- enable bold fonts
-  italics = true, -- enable italics
-  compile = false, -- enable compiling the colorscheme
+  bold = true,      -- enable bold fonts
+  italics = true,   -- enable italics
+  compile = false,  -- enable compiling the colorscheme
   undercurl = true, -- enable undercurls
   commentStyle = { italic = true },
   functionStyle = {},
   keywordStyle = { italic = true },
   statementStyle = {},
   typeStyle = {},
-  transparent = true, -- do not set background color
-  dimInactive = false, -- dim inactive window `:h hl-NormalNC`
+  transparent = true,    -- do not set background color
+  dimInactive = false,   -- dim inactive window `:h hl-NormalNC`
   terminalColors = true, -- define vim.g.terminal_color_{0,17}
-  colors = { -- add/modify theme and palette colors
+  colors = {             -- add/modify theme and palette colors
     palette = {},
     theme = { zen = {}, pearl = {}, ink = {}, all = {} },
   },
@@ -194,18 +194,16 @@ require('kanso').setup {
       MasonNormal = { bg = theme.ui.bg_m3, fg = theme.ui.fg_dim },
     }
   end,
-  background = { -- map the value of 'background' option to a theme
-    dark = 'zen', -- try "zen", "mist" or "pearl" !
-    light = 'ink', -- try "zen", "mist" or "pearl" !
+  background = {          -- map the value of 'background' option to a theme
+    dark = 'zen',         -- try "zen", "mist" or "pearl" !
+    light = 'ink',        -- try "zen", "mist" or "pearl" !
   },
   foreground = 'default', -- "default" or "saturated" (can also be a table like background)
 }
 
 require('colorbuddy').colorscheme 'citylights'
-
 local lualine = require 'lualine'
 local citylights = require 'lualine.themes.citylights'
-
 lualine.setup(citylights)
 
 -- setup must be called before loading
