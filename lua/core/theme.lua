@@ -201,5 +201,12 @@ require('kanso').setup {
   foreground = 'default', -- "default" or "saturated" (can also be a table like background)
 }
 
+require('colorbuddy').colorscheme 'citylights'
+
+local lualine = require 'lualine'
+local citylights = require 'lualine.themes.citylights'
+
+lualine.setup(citylights)
+
 -- setup must be called before loading
-vim.cmd [[colorscheme catppuccin]]
+vim.cmd [[colorscheme citylights]]
