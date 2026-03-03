@@ -52,12 +52,17 @@ return {
     priority = 1000,
   },
   {
-    "aeagiraldelli/citylights.nvim",
+    'aeagiraldelli/citylights.nvim',
     dependencies = {
-      "tjdevries/colorbuddy.vim"
+      'tjdevries/colorbuddy.vim',
     },
     config = function()
-      require("colorbuddy").colorscheme("citylights")
-    end
-  }
+      require('colorbuddy').colorscheme 'citylights'
+    end,
+  },
+  {
+    'Mofiqul/vscode.nvim',
+    lazy = false,
+    priority = 1000,
+  },
 }
